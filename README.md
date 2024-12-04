@@ -1,22 +1,22 @@
 # 🤖 Shirayuki Bot
 
-![Shirayuki Bot Banner](https://example.com/banner-image.png)  <!-- Ganti dengan URL gambar banner Anda -->
+![Shirayuki Bot Banner]([https://example.com/banner-image.png](https://i.ibb.co.com/v3NtXN3/1000005474.jpg))
 
 ## 📖 Deskripsi
-**Shirayuki Bot** adalah bot Telegram yang dirancang untuk meningkatkan pengalaman pengguna dengan menyediakan berbagai fitur menarik dan berguna. Dengan kemampuan untuk mencari video, mengelola informasi pengguna, dan banyak lagi, Shirayuki Bot akan menjadi teman digital Anda yang sempurna!
+**Shirayuki Bot** adalah bot Telegram yang dirancang untuk membantu pengguna melakukan berbagai tugas dan juga bisa berinteraksi langsung dengan chatGPT untuk mencari informasi 
 
 ## 🌟 Fitur Utama
-- **🔍 Pencarian Video**: Cari dan temukan video dari berbagai sumber dengan mudah.
-- **👤 Informasi Pengguna**: Dapatkan dan kelola informasi pengguna dengan cepat.
-- **📝 Automated Writing**: Buat gambar dengan teks yang dapat disesuaikan secara otomatis.
+- **📥 Downloader**: kirim link dan dapat kan hasil download dengan mudah hampir support semua platform 
+- **👤 ChatGPT**: Anda dapat dengan mudah berinteraksi dengan **AI** dengan secara langsung 
+- **📝 Automated Writing**: Buat text seperti kamu sedang menulis 
 - **💬 Interaktif**: Bot ini dirancang untuk berinteraksi dengan pengguna dengan cara yang menyenangkan.
 - **📊 Statistik Penggunaan**: Lihat statistik interaksi pengguna dengan bot.
 
 ## 🚀 Instalasi
 
-### Prasyarat
-- Python 3.6 atau lebih baru
-- `pip` untuk menginstal dependensi
+### Requirement
+- nodejs latest version
+- `ffmpeg`,`telegram-bot`
 
 ### Langkah-langkah
 1. **Clone Repositori**
@@ -27,36 +27,30 @@
 
 2. **Instal Dependensi**
    ```bash
-   pip install -r requirements.txt
+   npm install
    ```
 
 3. **Konfigurasi Bot**
-   Ganti `YOUR_BOT_TOKEN` di dalam kode dengan token yang Anda dapatkan dari [BotFather](https://t.me/botfather) di Telegram.
+   Ganti `YOUR_BOT_TOKEN` di dalam `settings.js` dengan token yang Anda dapatkan dari [BotFather](https://t.me/botfather) di Telegram.
 
 4. **Jalankan Bot**
    ```bash
-   python bot.py
+   npm start
    ```
 
 ## 📜 Penggunaan
 - **Mulai Bot**: Kirim `/start` untuk memulai interaksi dengan bot.
-- **Cari Video**: Gunakan `/vidio [kata_kunci]` untuk mencari video.
-- **Dapatkan ID Pengguna**: Gunakan `/userid` untuk mendapatkan ID pengguna.
-- **Buat Gambar**: Gunakan `/nulis [teks]` untuk membuat gambar dengan teks yang disesuaikan.
 - **Tampilkan Menu**: Kirim `/menu` untuk melihat daftar perintah yang tersedia.
 
 ## 📄 Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE). Lihat lisensi untuk detail lebih lanjut.
 
-## 🤝 Dukungan
-Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk membuka issue di repositori ini atau menghubungi kami melalui Telegram.
-
-## 🌐 Ikuti Kami
-Ikuti kami di [Telegram](https://t.me/lyn_mountain) untuk pembaruan terbaru dan berita tentang bot Shirayuki!
+## 🌐 Contact Me
+Contact me [Telegram](https://t.me/lyn_mountain) jika kamu memiliki saran atau pun report tentang **shirayuki bot**
 
 ---
 
 Terima kasih telah menggunakan **Shirayuki Bot**! Nikmati pengalaman Anda dan semoga bermanfaat!
 
 ## 🙏 Thanks
-Saya menggunakan base dari betabotz dan juga hampir sebagian menggunakan **REST API** dari [BetaBotz](https://github.com/NamaPengembang) jangan lupa untuk kasih start dan fork kepada [BetaBotz]
+Saya menggunakan base dari betabotz dan juga hampir sebagian menggunakan **REST API** dari [BetaBotz](https://github.com/NamaPengembang) jangan lupa untuk kasih start dan fork kepada **BetaBotz**
