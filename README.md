@@ -57,3 +57,6 @@ Ikuti kami di [Telegram](https://t.me/lyn_mountain) untuk pembaruan terbaru dan 
 ---
 
 Terima kasih telah menggunakan **Shirayuki Bot**! Nikmati pengalaman Anda dan semoga bermanfaat!
+
+## 🙏 Thanks
+Saya menggunakan base dari betabotz dan juga hampir sebagian menggunakan **REST API** dari [BetaBotz](https://github.com/NamaPengembang) jangan lupa untuk kasih start dan fork kepada [BetaBotz]
