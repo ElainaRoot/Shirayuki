@@ -15,8 +15,8 @@
 ## 🚀 Instalasi
 
 ### Requirement
-- nodejs latest version
-- `ffmpeg`,`telegram-bot`
+- `nodejs`
+- Sebelum lanjut alangkah baik nya kamu kamu daftar dulu di [BetaBotz](https://api.betabotz.eu.org/users/register) untuk mendapatkan `APIKEY` nya setelah itu baru lanjut ke langkah selanjutnya
 
 ### Langkah-langkah
 1. **Clone Repositori**
@@ -31,7 +31,7 @@
    ```
 
 3. **Konfigurasi Bot**
-   Ganti `YOUR_BOT_TOKEN` di dalam `settings.js` dengan token yang Anda dapatkan dari [BotFather](https://t.me/botfather) di Telegram.
+   Ganti `YOUR_BOT_TOKEN` di dalam `settings.js` dengan token yang Anda dapatkan dari [BotFather](https://t.me/botfather) di Telegram, dan juga isi `APIKEY` yang sudah kamu dapatkan setelah daftar di ***betabotz**
 
 4. **Jalankan Bot**
    ```bash
@@ -42,9 +42,6 @@
 - **Mulai Bot**: Kirim `/start` untuk memulai interaksi dengan bot.
 - **Tampilkan Menu**: Kirim `/menu` untuk melihat daftar perintah yang tersedia.
 
-## 📄 Lisensi
-Proyek ini dilisensikan di bawah [MIT License](LICENSE). Lihat lisensi untuk detail lebih lanjut.
-
 ## 🌐 Contact Me
 Contact me [Telegram](https://t.me/lyn_mountain) jika kamu memiliki saran atau pun report tentang **shirayuki bot**
 
@@ -52,5 +49,7 @@ Contact me [Telegram](https://t.me/lyn_mountain) jika kamu memiliki saran atau p
 
 Terima kasih telah menggunakan **Shirayuki Bot**! Nikmati pengalaman Anda dan semoga bermanfaat!
 
-## 🙏 Thanks
-Saya menggunakan base dari betabotz dan juga hampir sebagian menggunakan **REST API** dari [BetaBotz](https://github.com/NamaPengembang) jangan lupa untuk kasih start dan fork kepada **BetaBotz**
+## 🙏 Thanks to
+1. [BOTCAHX](https://github.com/BOTCAHX)
+2. [ERLAN](https://github.com/ERLANRAHMAT)
+3. Telegram API
