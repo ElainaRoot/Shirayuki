@@ -1,6 +1,6 @@
 # 🤖 Shirayuki Bot
 
-![Shirayuki Bot Banner]([(https://i.ibb.co.com/v3NtXN3/1000005474.jpg)])
+![Shirayuki Bot Banner](https://i.ibb.co.com/v3NtXN3/1000005474.jpg)
 
 ## 📖 Deskripsi
 **Shirayuki Bot** adalah bot Telegram yang dirancang untuk membantu pengguna melakukan berbagai tugas dan juga bisa berinteraksi langsung dengan chatGPT untuk mencari informasi 
