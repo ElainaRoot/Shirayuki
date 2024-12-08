@@ -5,7 +5,7 @@
 ## 📖 Deskripsi
 **Shirayuki Bot** is a Telegram bot designed to help users perform various tasks and can also interact directly with chatGPT to search for information. 
 
-## 🌟 Fitur Utama
+## 🌟 Main Feature
 - **📥 Downloader**: Send link and get download result easily, almost supports all platforms 
 - **👤 ChatGPT**: You can easily interact with **AI** directly 
 - **Info**: This bot is still in beta, maybe I will update it in the future if I have time.
