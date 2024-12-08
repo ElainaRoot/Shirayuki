@@ -10,9 +10,9 @@ don't forget to give a star ⭐
 */
 
 module.exports = {
-  ownerUsernames: ["@Lyn_Mountain"], //Your Username
-  ownerNumber: "+6283175******", //Your Number 
-  telegramBotToken: "7916962004:AAF3_EtxOwehcHFmlOQvvmlpqk5MLQGOdGQ", // Add your bot token, make it in @botfather
+  ownerUsernames: ["YOUR_USERNAME"], //Your Username
+  ownerNumber: "+62_YOUR_NUMBER", //Your Number 
+  telegramBotToken: "YOUR_BOT_TOKEN", // Add your bot token, make it in @botfather
   imageUrl: "https://i.ibb.co.com/wyX28XJ/Shirayukii.png", // Change your thumbnail
   buttonUrl: "https://github.com/ElainaRoot/Shirayuki", // URL script
   api: "https://api.betabotz.eu.org", // Base API
