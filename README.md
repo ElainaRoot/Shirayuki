@@ -8,7 +8,6 @@
 ## 🌟 Fitur Utama
 - **📥 Downloader**: Send link and get download result easily, almost supports all platforms 
 - **👤 ChatGPT**: You can easily interact with **AI** directly 
-You can easily interact with **AI** directly
 - **Info**: This bot is still in beta, maybe I will update it in the future if I have time.
 
 ## 🚀 Installation

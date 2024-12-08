@@ -1,6 +1,6 @@
 {
   "name": "telebot",
-  "version": "0.0.1",
+  "version": "Beta_0.1",
   "description": "Simple Telegram Bot Plugins",
   "main": "beta.js",
   "scripts": {
