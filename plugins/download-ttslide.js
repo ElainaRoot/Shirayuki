@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 
 const plugin = {
-    commands: ['/douyin'],
+    commands: ['/ttslidedl'],
     tags: ['download'],
     init: async (bot, {
         buttonUrl,
@@ -9,11 +9,11 @@ const plugin = {
         apikey
     }) => {
 
-        bot.onText(/^\/douyin(?: (.+))?$/, async (msg, match) => {
+        bot.onText(/^\/ttslidedl(?: (.+))?$/, async (msg, match) => {
             const chatId = msg.chat.id;
             const inputText = match[1];
             if (!inputText) {
-                bot.sendMessage(chatId, '🔗 Input ur link like\n/douyin https://v.douyin.com/ikq8axJ/', {
+                bot.sendMessage(chatId, '🔗 Input link example:\n/ttslidedl https://vt.tiktok.com/ZSjTuHT4r/', {
                     reply_to_message_id: msg.message_id
                 });
                 return;
@@ -22,19 +22,26 @@ const plugin = {
                 reply_to_message_id: msg.message_id
             });
             try {
-                const apiUrl = `https://api.betabotz.eu.org/api/download/douyin?url=${encodeURIComponent(inputText)}&apikey=${apikey}`;
-                const apis = await fetch(apiUrl);
-                const res = await apis.json();
+                const apiUrl = `https://api.betabotz.eu.org/api/download/ttslide?url=${encodeURIComponent(inputText)}&apikey=${apikey}`;
+                const response = await fetch(apiUrl);
+                const res = await response.json();
+
+                if (!res.status) {
+                    bot.sendMessage(chatId, '❌ An error occurred while processing your request. Please try again.', {
+                        reply_to_message_id: msg.message_id
+                    });
+                    return;
+                }
 
                 const {
                     title,
-                    video,
-                    audio
+                    images,
+                    audio,
+                    thumbnail
                 } = res.result;
-                const videoUrl = video[0];
                 const audioUrl = audio[0];
 
-                const caption = `🎥 *Tittle:* *${title}*\n\n*Note:* reply anything to me to get sound\n🎵 *Audio:* [Download Audio](${audioUrl})`;
+                const caption = `🖼️ *Title:* *${title}*\n\n🎵 *Audio:* [Download Audio](${audioUrl})`;
                 const replyMarkup = {
                     reply_markup: {
                         inline_keyboard: [
@@ -50,18 +57,25 @@ const plugin = {
                     },
                 };
 
-                const sentMessage = await bot.sendVideo(chatId, videoUrl, {
+                await bot.sendPhoto(chatId, thumbnail, {
                     caption: caption,
                     parse_mode: 'Markdown',
                     reply_to_message_id: msg.message_id,
                     ...replyMarkup
                 });
 
-                bot.onReplyToMessage(chatId, sentMessage.message_id, (replyMsg) => {
-                    bot.sendAudio(chatId, audioUrl, {
-                        reply_to_message_id: replyMsg.message_id
+                // Send images in batches of three
+                for (let i = 0; i < images.length; i += 3) {
+                    const imageBatch = images.slice(i, i + 3);
+                    const batchCaption = `📸 Here are images ${i + 1} to ${Math.min(i + 3, images.length)} from the slide:`;
+
+                    await bot.sendMediaGroup(chatId, imageBatch.map(url => ({
+                        type: 'photo',
+                        media: url
+                    })), {
+                        caption: batchCaption
                     });
-                });
+                }
 
             } catch (error) {
                 console.error('Error:', error);
