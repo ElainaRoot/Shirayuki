@@ -2,7 +2,7 @@
 
 ![Shirayuki Bot Banner](https://i.ibb.co.com/v3NtXN3/1000005474.jpg)
 
-## 📖 Deskripsi
+## 📖 Description
 **Shirayuki Bot** is a Telegram bot designed to help users perform various tasks and can also interact directly with chatGPT to search for information. 
 
 ## 🌟 Main Feature
