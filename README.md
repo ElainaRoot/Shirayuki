@@ -3,22 +3,21 @@
 ![Shirayuki Bot Banner](https://i.ibb.co.com/v3NtXN3/1000005474.jpg)
 
 ## 📖 Deskripsi
-**Shirayuki Bot** adalah bot Telegram yang dirancang untuk membantu pengguna melakukan berbagai tugas dan juga bisa berinteraksi langsung dengan chatGPT untuk mencari informasi 
+**Shirayuki Bot** is a Telegram bot designed to help users perform various tasks and can also interact directly with chatGPT to search for information. 
 
 ## 🌟 Fitur Utama
-- **📥 Downloader**: kirim link dan dapat kan hasil download dengan mudah hampir support semua platform 
-- **👤 ChatGPT**: Anda dapat dengan mudah berinteraksi dengan **AI** dengan secara langsung 
-- **📝 Automated Writing**: Buat text seperti kamu sedang menulis 
-- **💬 Interaktif**: Bot ini dirancang untuk berinteraksi dengan pengguna dengan cara yang menyenangkan.
-- **📊 Statistik Penggunaan**: Lihat statistik interaksi pengguna dengan bot.
+- **📥 Downloader**: Send link and get download result easily, almost supports all platforms 
+- **👤 ChatGPT**: You can easily interact with **AI** directly 
+You can easily interact with **AI** directly
+- **Info**: This bot is still in beta, maybe I will update it in the future if I have time.
 
-## 🚀 Instalasi
+## 🚀 Installation
 
 ### Requirement
 - `nodejs`
-- Sebelum lanjut alangkah baik nya kamu kamu daftar dulu di [BetaBotz](https://api.betabotz.eu.org/users/register) untuk mendapatkan `APIKEY` nya setelah itu baru lanjut ke langkah selanjutnya
+- Before continuing, it would be better if you register first at [BetaBotz](https://api.betabotz.eu.org/users/register) to get the `APIKEY`, then proceed to the next step.
 
-### Langkah-langkah
+### The steps
 1. **Clone Repositori**
    ```bash
    git clone https://github.com/USERNAME/shirayuki-bot.git
@@ -30,24 +29,24 @@
    npm install
    ```
 
-3. **Konfigurasi Bot**
-   Ganti `YOUR_BOT_TOKEN` di dalam `settings.js` dengan token yang Anda dapatkan dari [BotFather](https://t.me/botfather) di Telegram, dan juga isi `APIKEY` yang sudah kamu dapatkan setelah daftar di ***betabotz**
+3. **Bot Configuration**
+   Replace `YOUR_BOT_TOKEN` in `settings.js` with the token you got from [BotFather](https://t.me/botfather) on Telegram, and also fill in the `APIKEY` you got after registering on ***BetaBotz***
 
-4. **Jalankan Bot**
+4. **Run the Bot**
    ```bash
    npm start
    ```
 
-## 📜 Penggunaan
-- **Mulai Bot**: Kirim `/start` untuk memulai interaksi dengan bot.
-- **Tampilkan Menu**: Kirim `/menu` untuk melihat daftar perintah yang tersedia.
+## 📜 Usage
+- **Start Bot**: Send `/start` to start interacting with the bot.
+- **Show Menu**: Send `/menu` to see a list of available commands.
 
 ## 🌐 Contact Me
-Contact me [Telegram](https://t.me/lyn_mountain) jika kamu memiliki saran atau pun report tentang **shirayuki bot**
+Contact me [Telegram](https://t.me/zhuksks) if you have any suggestions or reports about **shirayuki bot**
 
 ---
 
-Terima kasih telah menggunakan **Shirayuki Bot**! Nikmati pengalaman Anda dan semoga bermanfaat!
+Thank you for using **Shirayuki Bot**! Enjoy your experience and good luck!
 
 ## 🙏 Thanks to
 1. [BOTCAHX](https://github.com/BOTCAHX)

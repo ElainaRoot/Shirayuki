@@ -60,34 +60,44 @@ const options = {
 bot.on('new_chat_members', async (msg) => {
   const chatId = msg.chat.id;
   const newUser = msg.new_chat_members[0];
+
+  // Get the user's profile photo or use a default image
   const profilePhoto = newUser && newUser.photo ? await bot.getFileLink(newUser.photo.big_file_id) : 'https://telegra.ph/file/24fa902ead26340f3df2c.png';
 
+  // Create a spooky welcome message
   const welcomeMessage = `
-   🎉 Hai ${newUser.username}! 🎉
-   Selamat datang di grup ${msg.chat.title}.
-   Jam: ${new Date(msg.date * 1000).toLocaleTimeString()}
-   Hari: ${new Date(msg.date * 1000).toLocaleDateString()}
-   Semoga betah yaa. 😊
-  `;
+👋 Welcome, ${newUser.first_name || newUser.username}! 🎃
+You've just stepped into the haunted realm of *${msg.chat.title}*! 👻
+🕒 **Time:** ${new Date(msg.date * 1000).toLocaleTimeString()}
+📅 **Date:** ${new Date(msg.date * 1000).toLocaleDateString()}
+We're thrilled (and a little spooked) to have you join us! Hope you can handle the chills and thrills! 😈
 
-  bot.sendPhoto(chatId, profilePhoto, { caption: welcomeMessage, ...options });
+If you dare to ask questions or need any help, just summon us! 
+  `;
+  // Send the welcome message with the user's profile photo
+  bot.sendPhoto(chatId, profilePhoto, { caption: welcomeMessage, parse_mode: 'Markdown' });
 });
 
 bot.on('left_chat_member', async (msg) => {
   const chatId = msg.chat.id;
   const leftUser = msg.left_chat_member;
 
+  // Get the user's profile photo or use a default image
   const profilePhoto = leftUser && leftUser.photo ? await bot.getFileLink(leftUser.photo.big_file_id) : 'https://telegra.ph/file/24fa902ead26340f3df2c.png';
 
+  // Create a spooky goodbye message
   const goodbyeMessage = `
-     👋 Goodbye ${leftUser.username}!
-    Selamat tinggal di grup ${msg.chat.title}.
-    Jam: ${new Date(msg.date * 1000).toLocaleTimeString()}
-    Hari: ${new Date(msg.date * 1000).toLocaleDateString()}
-    Semoga tenang disana. 😢
+🕯️ Farewell, ${leftUser.first_name || leftUser.username}... 🕯️
+You've vanished from the shadows of *${msg.chat.title}*! 🌑
+🕒 **Time:** ${new Date(msg.date * 1000).toLocaleTimeString()}
+📅 **Date:** ${new Date(msg.date * 1000).toLocaleDateString()}
+May the spirits guide you on your journey ahead. You shall be remembered in the echoes of this chat. 👻
+
+If fate allows, may our paths cross again... 🌌
   `;
 
-  bot.sendPhoto(chatId, profilePhoto, { caption: goodbyeMessage, ...options });
+  // Send the goodbye message with the user's profile photo
+  bot.sendPhoto(chatId, profilePhoto, { caption: goodbyeMessage, parse_mode: 'Markdown' });
 });
 
 // Load plugins
