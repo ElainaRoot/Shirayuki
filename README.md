@@ -19,7 +19,7 @@
 ### The steps
 1. **Clone Repositori**
    ```bash
-   git clone https://github.com/USERNAME/shirayuki-bot.git
+   git clone https://github.com/USERNAME/Shirayuki.git
    cd shirayuki-bot
    ```
 
